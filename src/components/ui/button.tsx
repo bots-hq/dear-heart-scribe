@@ -15,8 +15,10 @@ const buttonVariants = cva(
         secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
-        romantic: "bg-gradient-to-r from-romantic to-primary text-romantic-foreground hover:from-romantic/90 hover:to-primary/90 shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300",
-        gold: "bg-gradient-to-r from-gold to-accent text-gold-foreground hover:from-gold/90 hover:to-accent/90 shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300",
+        romantic: "bg-gradient-to-r from-romantic via-purple to-primary text-romantic-foreground hover:from-romantic/90 hover:via-purple/90 hover:to-primary/90 shadow-lg hover:shadow-2xl hover:-translate-y-1 hover:scale-105 transition-all duration-500",
+        gold: "bg-gradient-to-r from-sunset via-gold to-romantic text-gold-foreground hover:from-sunset/90 hover:via-gold/90 hover:to-romantic/90 shadow-lg hover:shadow-2xl hover:-translate-y-1 hover:scale-105 transition-all duration-500",
+        magical: "bg-gradient-to-r from-cyan via-purple to-romantic text-purple-foreground hover:from-cyan/90 hover:via-purple/90 hover:to-romantic/90 shadow-lg hover:shadow-2xl hover:-translate-y-1 hover:scale-105 transition-all duration-500 animate-pulse",
+        ocean: "bg-gradient-to-r from-accent via-cyan to-purple text-cyan-foreground hover:from-accent/90 hover:via-cyan/90 hover:to-purple/90 shadow-lg hover:shadow-2xl hover:-translate-y-1 hover:scale-105 transition-all duration-500",
       },
       size: {
         default: "h-10 px-4 py-2",

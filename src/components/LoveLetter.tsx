@@ -5,14 +5,18 @@ interface LoveLetterProps {
   children: React.ReactNode;
   className?: string;
   title?: string;
+  id?: string;
 }
 
-const LoveLetter: React.FC<LoveLetterProps> = ({ children, className, title }) => {
+const LoveLetter: React.FC<LoveLetterProps> = ({ children, className, title, id }) => {
   return (
-    <div className={cn(
-      "love-letter rounded-lg p-8 md:p-12 mx-4 md:mx-0 animate-fadeInUp",
-      className
-    )}>
+    <div 
+      id={id}
+      className={cn(
+        "love-letter rounded-lg p-8 md:p-12 mx-4 md:mx-0 animate-fadeInUp",
+        className
+      )}
+    >
       {title && (
         <h2 className="font-dancing text-3xl md:text-4xl text-romantic mb-6 text-center">
           {title}

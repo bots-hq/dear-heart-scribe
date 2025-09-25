@@ -9,33 +9,42 @@
 
 @layer base {
   :root {
-    /* Romantic Color Palette */
-    --background: 350 100% 98%;
-    --foreground: 340 20% 25%;
+    /* Creative Romantic Color Palette */
+    --background: 340 100% 97%;
+    --foreground: 260 15% 25%;
 
-    --card: 350 60% 97%;
-    --card-foreground: 340 25% 30%;
+    --card: 320 80% 96%;
+    --card-foreground: 260 20% 30%;
 
-    --popover: 350 60% 97%;
-    --popover-foreground: 340 25% 30%;
+    --popover: 320 80% 96%;
+    --popover-foreground: 260 20% 30%;
 
-    --primary: 340 75% 65%;
-    --primary-foreground: 350 100% 98%;
+    --primary: 315 100% 70%;
+    --primary-foreground: 340 100% 98%;
 
-    --secondary: 320 40% 85%;
-    --secondary-foreground: 340 30% 35%;
+    --secondary: 280 60% 85%;
+    --secondary-foreground: 260 25% 35%;
 
-    --muted: 330 25% 92%;
-    --muted-foreground: 340 15% 55%;
+    --muted: 300 40% 90%;
+    --muted-foreground: 260 20% 55%;
 
-    --accent: 15 80% 75%;
-    --accent-foreground: 340 30% 25%;
+    --accent: 200 100% 75%;
+    --accent-foreground: 260 25% 25%;
 
-    --romantic: 330 85% 70%;
-    --romantic-foreground: 350 100% 98%;
+    --romantic: 315 90% 65%;
+    --romantic-foreground: 340 100% 98%;
 
-    --gold: 45 90% 65%;
-    --gold-foreground: 340 30% 25%;
+    --gold: 50 100% 70%;
+    --gold-foreground: 260 25% 25%;
+
+    --purple: 270 100% 75%;
+    --purple-foreground: 340 100% 98%;
+
+    --cyan: 180 100% 70%;
+    --cyan-foreground: 260 25% 25%;
+
+    --sunset: 25 100% 75%;
+    --sunset-foreground: 260 25% 25%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
@@ -46,18 +55,22 @@
 
     --radius: 0.5rem;
     
-    /* Romantic Gradients */
-    --gradient-romantic: linear-gradient(135deg, hsl(var(--romantic)), hsl(var(--primary)));
+    /* Creative Gradients */
+    --gradient-rainbow: linear-gradient(135deg, hsl(var(--romantic)), hsl(var(--purple)), hsl(var(--cyan)));
+    --gradient-sunset: linear-gradient(135deg, hsl(var(--sunset)), hsl(var(--gold)), hsl(var(--romantic)));
+    --gradient-ocean: linear-gradient(135deg, hsl(var(--cyan)), hsl(var(--accent)), hsl(var(--purple)));
+    --gradient-dream: linear-gradient(135deg, hsl(var(--romantic)), hsl(var(--primary)), hsl(var(--gold)));
     --gradient-soft: linear-gradient(180deg, hsl(var(--background)), hsl(var(--card)));
-    --gradient-gold: linear-gradient(135deg, hsl(var(--gold)), hsl(var(--accent)));
+    --gradient-magical: conic-gradient(from 0deg, hsl(var(--romantic)), hsl(var(--purple)), hsl(var(--cyan)), hsl(var(--gold)), hsl(var(--romantic)));
     
-    /* Shadows */
-    --shadow-romantic: 0 10px 30px -10px hsl(var(--romantic) / 0.3);
-    --shadow-soft: 0 4px 20px -2px hsl(var(--primary) / 0.1);
-    --shadow-gold: 0 8px 25px -5px hsl(var(--gold) / 0.4);
+    /* Creative Shadows */
+    --shadow-rainbow: 0 15px 40px -10px hsl(var(--romantic) / 0.4), 0 8px 25px -5px hsl(var(--purple) / 0.3);
+    --shadow-dream: 0 20px 50px -12px hsl(var(--gold) / 0.4), 0 10px 30px -8px hsl(var(--romantic) / 0.3);
+    --shadow-magical: 0 25px 60px -15px hsl(var(--cyan) / 0.3), 0 15px 35px -10px hsl(var(--purple) / 0.4);
+    --shadow-glow: 0 0 50px hsl(var(--romantic) / 0.6), 0 0 100px hsl(var(--purple) / 0.4);
     
-    /* Animations */
-    --transition-romantic: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    /* Enhanced Animations */
+    --transition-magical: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -135,8 +148,19 @@
   .heart {
     position: absolute;
     font-size: 1.5rem;
-    color: hsl(var(--romantic) / 0.6);
     animation: float 6s infinite ease-in-out;
+  }
+  
+  .heart:nth-child(odd) {
+    color: hsl(var(--romantic) / 0.7);
+  }
+  
+  .heart:nth-child(even) {
+    color: hsl(var(--purple) / 0.6);
+  }
+  
+  .heart:nth-child(3n) {
+    color: hsl(var(--cyan) / 0.6);
   }
   
   /* Love Letter Paper Effect */

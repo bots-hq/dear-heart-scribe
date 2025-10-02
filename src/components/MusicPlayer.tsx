@@ -6,9 +6,7 @@ const MusicPlayer = () => {
   const [isPlaying, setIsPlaying] = useState(false);
   const audioRef = useRef<HTMLAudioElement>(null);
 
-  // Replace this URL with your romantic song URL
-  // You can upload to Google Drive, Dropbox, or any music hosting service
-  const musicUrl = "YOUR_MUSIC_URL_HERE"; // TODO: Add your music URL
+  const musicUrl = "https://www.dropbox.com/scl/fi/hafmt2cc44rf9iz7s884k/Ed-Sheeran-Perfect.mp3?rlkey=za1ykruc6hmsj6v3f8ed1x4ny&st=uhs3t5o9&dl=1";
 
   const togglePlay = () => {
     if (audioRef.current) {

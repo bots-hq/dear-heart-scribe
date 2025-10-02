@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Button } from '@/components/ui/button';
 import { Heart, Sparkles } from 'lucide-react';
 
@@ -50,6 +50,7 @@ const things = [
 const RomanticThingsILike = () => {
   const [isRevealed, setIsRevealed] = useState(false);
   const [showFinal, setShowFinal] = useState(false);
+  const sectionRef = useRef<HTMLElement>(null);
 
   const handleReveal = () => {
     setIsRevealed(true);
@@ -58,6 +59,37 @@ const RomanticThingsILike = () => {
       setShowFinal(true);
     }, 4500);
   };
+
+  const resetSection = () => {
+    setIsRevealed(false);
+    setShowFinal(false);
+  };
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          // Reset when section leaves viewport
+          if (!entry.isIntersecting && isRevealed) {
+            resetSection();
+          }
+        });
+      },
+      {
+        threshold: 0.1, // Trigger when 10% of section is visible
+      }
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => {
+      if (sectionRef.current) {
+        observer.unobserve(sectionRef.current);
+      }
+    };
+  }, [isRevealed]);
 
   const getAnimationClass = (animation: string, delay: number) => {
     const baseDelay = `animation-delay: ${delay}s`;
@@ -77,7 +109,7 @@ const RomanticThingsILike = () => {
   };
 
   return (
-    <section className="relative min-h-screen bg-gradient-to-br from-background via-primary/5 to-romantic/10 py-24 overflow-hidden">
+    <section ref={sectionRef} className="relative min-h-screen bg-gradient-to-br from-background via-primary/5 to-romantic/10 py-24 overflow-hidden">
       {/* Soft glowing background effects */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-gradient-to-r from-primary/20 to-romantic/20 rounded-full blur-3xl animate-pulse"></div>

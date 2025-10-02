@@ -4,6 +4,7 @@ import FloatingHearts from '@/components/FloatingHearts';
 import LoveLetter from '@/components/LoveLetter';
 import MusicPlayer from '@/components/MusicPlayer';
 import EntranceScreen from '@/components/EntranceScreen';
+import RomanticThingsILike from '@/components/RomanticThingsILike';
 import heroImage from '@/assets/romantic-hero.jpg';
 
 const Index = () => {
@@ -362,6 +363,9 @@ const Index = () => {
         </div>
 
       </section>
+
+      {/* Romantic Things Section */}
+      <RomanticThingsILike />
 
       {/* Footer */}
       <footer className="bg-gradient-to-r from-primary/8 via-accent/8 to-romantic/8 py-16 text-center relative overflow-hidden border-t border-primary/10">

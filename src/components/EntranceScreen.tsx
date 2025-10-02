@@ -8,8 +8,8 @@ interface EntranceScreenProps {
 
 const EntranceScreen = ({ onEnter }: EntranceScreenProps) => {
   return (
-    <div className="fixed inset-0 z-[100] bg-gradient-to-br from-background via-primary/5 to-romantic/10 flex items-center justify-center animate-fade-in">
-      <div className="text-center space-y-8 p-8 max-w-md mx-auto">
+    <div className="fixed inset-0 z-[100] bg-gradient-to-br from-background via-primary/5 to-romantic/10 flex items-center justify-center animate-fade-in overflow-y-auto">
+      <div className="text-center space-y-8 p-8 max-w-2xl mx-auto my-8">
         {/* Animated hearts */}
         <div className="relative">
           <Heart className="w-24 h-24 mx-auto text-romantic fill-romantic animate-pulse" />
@@ -20,11 +20,30 @@ const EntranceScreen = ({ onEnter }: EntranceScreenProps) => {
 
         {/* Title */}
         <div className="space-y-2">
-          <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-romantic via-primary to-purple bg-clip-text text-transparent">
-            A Love Letter
+          <h1 className="text-4xl md:text-5xl font-dancing bg-gradient-to-r from-romantic via-primary to-purple bg-clip-text text-transparent">
+            My Dearest Sehba
           </h1>
-          <p className="text-lg text-muted-foreground">
-            Just for you ❤️
+          <p className="text-lg text-muted-foreground font-playfair">
+            A letter from my heart ❤️
+          </p>
+        </div>
+
+        {/* Letter */}
+        <div className="bg-background/80 backdrop-blur-sm p-8 rounded-2xl border border-primary/20 shadow-elegant space-y-4 text-left">
+          <p className="font-playfair text-base md:text-lg text-foreground/90 leading-relaxed">
+            I created this for you, my love, my happiness, my everything. The only intent behind every word, 
+            every color, every animation here is to make you smile—that beautiful smile that lights up my entire world.
+          </p>
+          <p className="font-playfair text-base md:text-lg text-foreground/90 leading-relaxed">
+            I wanted you to feel how special you are to me, how much joy you bring into my life, 
+            and how every moment with you is a blessing I cherish deeply. You deserve to feel loved, 
+            appreciated, and adored—not just today, but every single day.
+          </p>
+          <p className="font-playfair text-base md:text-lg text-foreground/90 leading-relaxed text-center italic">
+            This is my heart, poured into pixels, just for you. 💕
+          </p>
+          <p className="font-playfair text-sm text-muted-foreground text-right">
+            With all my love, Salik
           </p>
         </div>
 

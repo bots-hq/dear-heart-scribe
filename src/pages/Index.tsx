@@ -25,12 +25,11 @@ const Index = () => {
         <div className="absolute inset-0 bg-gradient-to-br from-background/85 via-primary/5 to-romantic/15" />
         <div className="relative z-10 text-center px-6 max-w-5xl mx-auto">
           <h1 className="font-dancing text-5xl md:text-7xl lg:text-8xl bg-gradient-to-r from-primary via-purple to-romantic bg-clip-text text-transparent mb-8 leading-tight">
-            To My Sehba, With All My Heart
+            My Dearest Sehba
           </h1>
           <div className="max-w-3xl mx-auto mb-12">
             <p className="font-playfair text-lg md:text-xl lg:text-2xl text-foreground/80 leading-relaxed">
-              Every word here is written with love, every memory treasured forever. 
-              This is our story, my dear Sehba, and it's the most beautiful one I know.
+              I don't even know where to start, because whenever it comes to you, words always feel too small compared to what I actually feel in my heart. But still, I want to try, because you deserve every bit of love that I can put into words.
             </p>
             <p className="font-playfair text-base md:text-lg text-foreground/60 mt-4 italic">
               Forever yours, Salik ❤️
@@ -69,24 +68,24 @@ const Index = () => {
         </div>
         
         <div className="space-y-16">
-          {/* Postcard 1: Destiny */}
+          {/* Postcard 1: Our Beginning */}
           <LoveLetter 
-            title="✨ Meant to Be" 
+            title="✨ How It All Started" 
             className="shadow-elegant hover:shadow-professional transition-all duration-500 border-2 border-primary/20 bg-gradient-to-br from-primary/5 via-purple/5 to-background"
           >
             <div className="space-y-5 text-lg leading-relaxed">
               <p className="text-foreground/90">
-                My love, every time I think of you, I feel like the luckiest person in the world. Our story is something I never expected, yet it feels like it was always meant to be. There was a time when we barely knew each other, when life kept us apart in small ways, but destiny has its own plans.
+                It feels almost unbelievable when I look back at how our story began. We were in the same school, yet we were strangers. We had no idea that life was slowly writing something for us. From those little chats, the breaks in between, the times when we drifted and then found our way back… all of it makes sense now.
               </p>
               <p className="text-foreground/90">
-                Somehow, no matter how many pauses or breaks came between us, we always found our way back. And now when I look at us, I can't help but feel thankful for every little moment that led me to you.
+                Every pause, every gap, every small conversation was taking us to this moment, to where we are today.
               </p>
             </div>
           </LoveLetter>
 
           {/* Postcard 2: First Call */}
           <LoveLetter 
-            title="📞 The Call That Changed Everything" 
+            title="📞 'Can we call?' on Telegram" 
             className="shadow-elegant hover:shadow-professional transition-all duration-500 border-2 border-romantic/20 bg-gradient-to-br from-romantic/5 via-purple/5 to-background"
           >
             <div className="space-y-5 text-lg leading-relaxed">
@@ -96,33 +95,47 @@ const Index = () => {
                 </p>
               </div>
               <p className="text-foreground/90">
-                I will never forget the day you casually asked me, "can we call?" It felt so small, but to me, it was everything. My heart was beating so fast, and I was so nervous before pressing that button. But then your voice came. Soft, natural, and full of comfort. It was like something I had been waiting for without even knowing.
-              </p>
-              <p className="text-foreground/90">
-                We talked for about an hour, but it felt like only minutes. That was the first time I felt the magic in your voice, and I knew in my heart that there was something about you I could never let go of.
+                I still remember the first time you asked me, "can we call?" on Telegram. It was the first call we made, and tbh, I was a bit nervous that time. But when I heard your voice, everything felt right.
               </p>
             </div>
           </LoveLetter>
 
-          {/* Postcard 3: Late Night Talks */}
+          {/* Postcard 3: Uzbekistan Airport */}
           <LoveLetter 
-            title="🌙 Late Night Magic" 
+            title="✈️ Uzbekistan - The Airport Night" 
             className="shadow-elegant hover:shadow-professional transition-all duration-500 border-2 border-purple/20 bg-gradient-to-br from-purple/5 via-cyan/5 to-background"
           >
             <div className="space-y-5 text-lg leading-relaxed">
               <p className="text-foreground/90">
-                After that, our calls became a part of my life. Sometimes they started with a simple "call?" text, and before we knew it, hours would pass. We would laugh, share stories, tease each other, and sometimes just stay quiet — but even in silence, I felt close to you. The quiet moments with you felt as warm as the loud ones.
+                And then there were those late-night calls. The ones that made me smile even after a long tiring day. I will never forget Uzbekistan.
               </p>
               <div className="bg-gradient-to-br from-purple/10 to-primary/10 p-8 rounded-2xl border border-purple/20 my-6">
-                <h3 className="font-dancing text-2xl text-purple mb-4 text-center">The Night Before My Flight 💫</h3>
+                <h3 className="font-dancing text-2xl text-purple mb-4 text-center">The Night You Stayed Awake 💫</h3>
                 <p className="text-foreground/90 text-center">
-                  I still remember the late-night talks so clearly, especially the times when you stayed up for me when I needed someone the most. One of the most beautiful memories is the night before my flight, when you promised to stay awake with me until I boarded. I can never explain how much that touched me. It was not just sweet — it was pure love. That night I felt butterflies inside me.
+                  I still remember being at the airport for my early flight, and you stayed awake with me till I boarded. That touched me so deeply, more than I can ever explain. That night, I felt butterflies inside me, but I didn't tell you. I just held onto that feeling quietly, knowing you were special.
                 </p>
               </div>
             </div>
           </LoveLetter>
 
-          {/* Postcard 4: June 10 - Confession */}
+          {/* Postcard 4: Growing Friendship */}
+          <LoveLetter 
+            title="💬 'Call?' Messages" 
+            className="shadow-elegant hover:shadow-professional transition-all duration-500 border-2 border-cyan/20 bg-gradient-to-br from-cyan/5 via-accent/5 to-background"
+          >
+            <div className="space-y-5 text-lg leading-relaxed">
+              <p className="text-foreground/90">
+                Slowly, our friendship grew into something more. Those simple "call?" messages became part of my days. Sometimes we talked for hours, sometimes till morning, and every single time I felt closer to you.
+              </p>
+              <div className="text-center p-6 bg-gradient-to-r from-cyan/10 to-accent/10 rounded-xl border border-cyan/20">
+                <p className="font-dancing text-2xl text-primary italic">
+                  Every call brought us closer, turning friendship into something beautiful
+                </p>
+              </div>
+            </div>
+          </LoveLetter>
+
+          {/* Postcard 5: June 10 - Confession */}
           <LoveLetter 
             title="💝 June 10 - The Night We Confessed" 
             className="shadow-professional hover:shadow-serene transition-all duration-500 border-2 border-romantic/30 bg-gradient-to-br from-romantic/8 via-primary/8 to-background"
@@ -131,14 +144,14 @@ const Index = () => {
               <div className="text-center mb-6">
                 <div className="inline-block bg-gradient-to-r from-romantic via-purple to-primary p-6 rounded-2xl shadow-elegant">
                   <p className="font-dancing text-4xl text-white">June 10</p>
-                  <p className="text-white/90 text-sm mt-2">The day our hearts spoke</p>
+                  <p className="text-white/90 text-sm mt-2">The night that changed everything</p>
                 </div>
               </div>
               <p className="text-foreground/90">
-                As time went on, our bond became stronger and stronger. Our friendship slowly grew into something deeper. We built something so natural that I didn't even realize when it turned into love.
+                Then came the night of June 10. The night that changed everything. That was the night we confessed what we felt for each other. You said we should just go with the flow until we were ready for those three magical words.
               </p>
               <p className="text-foreground/90">
-                The night of June 10 will always stay with me. That was the night we finally confessed what we had both been holding inside. We admitted that we liked each other, with shyness but also with honesty. You suggested we should go with the flow until we were ready to say those three words, and when we finally said "I love you," it was like my whole world changed. In that moment, I realized how beautiful life truly is when you find the right person.
+                And when we finally said "I love you," it was like the world stopped for a second. I knew from that moment that my life had found something it could never lose.
               </p>
               <div className="text-center mt-8 p-6 bg-gradient-to-r from-romantic/10 to-primary/10 rounded-xl border-2 border-romantic/30">
                 <p className="font-dancing text-3xl text-primary">I love you ❤️</p>
@@ -146,62 +159,62 @@ const Index = () => {
             </div>
           </LoveLetter>
 
-          {/* Postcard 5: Growing Together */}
+          {/* Postcard 6: Overcoming Challenges */}
           <LoveLetter 
-            title="🌱 Growing Together" 
-            className="shadow-elegant hover:shadow-professional transition-all duration-500 border-2 border-cyan/20 bg-gradient-to-br from-cyan/5 via-accent/5 to-background"
+            title="💪 Stronger Together" 
+            className="shadow-elegant hover:shadow-professional transition-all duration-500 border-2 border-accent/20 bg-gradient-to-br from-accent/5 via-primary/5 to-background"
           >
             <div className="space-y-5 text-lg leading-relaxed">
               <p className="text-foreground/90">
-                Since then, my heart has been full with you. We have had our ups and downs, like every relationship, but what makes us different is that we never let problems stay for long. We always find a way to fix things together.
+                Since then, every day with you has felt sweeter. Of course, not everything goes perfectly all the time. Sometimes things get tough. But what I love most about us is that we never let problems win.
               </p>
-              <div className="text-center p-6 bg-gradient-to-r from-cyan/10 to-accent/10 rounded-xl border border-cyan/20">
+              <div className="text-center p-6 bg-gradient-to-r from-accent/10 to-primary/10 rounded-xl border border-accent/20">
                 <p className="font-dancing text-2xl text-primary italic">
-                  That, to me, is love in its purest form — not perfection, but the will to hold on and grow together.
+                  We always come back to each other, we always fix things, and we never let distance or differences break what we have.
                 </p>
               </div>
             </div>
           </LoveLetter>
 
-          {/* Postcard 6: First Date */}
+          {/* Postcard 7: First Date */}
           <LoveLetter 
             title="🤝 Our First Date - When You Held My Hand" 
             className="shadow-elegant hover:shadow-professional transition-all duration-500 border-2 border-gold/20 bg-gradient-to-br from-gold/5 via-sunset/5 to-background"
           >
             <div className="space-y-5 text-lg leading-relaxed">
               <p className="text-foreground/90">
-                I hold so many moments with you close to my heart, but one that I will never forget is our first date. I was nervous, maybe even a little shy, but then you held my hand. That small moment felt so big inside me. It was like butterflies and waves all at once.
+                One of my favorite memories is our first date. I was nervous, trying to act normal, but inside my heart was racing. Then you held my hand. That one moment gave me butterflies like I had never felt before.
               </p>
               <div className="text-center my-6">
                 <div className="inline-flex items-center gap-3 bg-gradient-to-r from-romantic/15 to-gold/15 px-8 py-4 rounded-full border-2 border-gold/30">
                   <span className="text-3xl">🦋</span>
-                  <span className="font-dancing text-2xl text-foreground">Butterflies & Waves</span>
-                  <span className="text-3xl">🌊</span>
+                  <span className="font-dancing text-2xl text-foreground">Butterflies & Electricity</span>
+                  <span className="text-3xl">⚡</span>
                 </div>
               </div>
               <p className="text-foreground/90 text-center font-semibold">
-                I had never felt something so pure and magical before. To this day, that remains one of the best moments of my life.
+                It felt like electricity running through me, waves I cannot put into words. That memory is one of the best of my life, and I know I will never forget it.
               </p>
             </div>
           </LoveLetter>
 
-          {/* Postcard 7: You Are My Peace */}
+          {/* Postcard 8: You Are My Peace */}
           <LoveLetter 
             title="🕊️ My Safe Place" 
-            className="shadow-professional hover:shadow-serene transition-all duration-500 border-2 border-accent/30 bg-gradient-to-br from-accent/8 via-cyan/8 to-background"
+            className="shadow-professional hover:shadow-serene transition-all duration-500 border-2 border-cyan/30 bg-gradient-to-br from-cyan/8 via-accent/8 to-background"
           >
             <div className="space-y-5 text-lg leading-relaxed">
               <p className="text-foreground/90">
-                Sehba, you are not just someone I love. You are the person who makes me feel at peace. Whenever I feel anxious, low, or burdened, the moment I talk to you, everything fades.
+                Sehba, you are not just the person I love. You are the person who makes me feel safe. Whenever I feel anxious, upset, or lost, just talking to you takes it all away.
               </p>
               <div className="grid md:grid-cols-3 gap-6 my-8">
-                <div className="bg-gradient-to-br from-accent/10 to-cyan/10 p-6 rounded-xl border border-accent/20 text-center">
+                <div className="bg-gradient-to-br from-cyan/10 to-accent/10 p-6 rounded-xl border border-cyan/20 text-center">
                   <p className="text-4xl mb-3">✨</p>
                   <p className="font-dancing text-xl text-primary">Your Magic</p>
                 </div>
-                <div className="bg-gradient-to-br from-cyan/10 to-primary/10 p-6 rounded-xl border border-cyan/20 text-center">
+                <div className="bg-gradient-to-br from-accent/10 to-primary/10 p-6 rounded-xl border border-accent/20 text-center">
                   <p className="text-4xl mb-3">🏠</p>
-                  <p className="font-dancing text-xl text-primary">My Home</p>
+                  <p className="font-dancing text-xl text-primary">My Comfort</p>
                 </div>
                 <div className="bg-gradient-to-br from-primary/10 to-purple/10 p-6 rounded-xl border border-primary/20 text-center">
                   <p className="text-4xl mb-3">💫</p>
@@ -209,71 +222,50 @@ const Index = () => {
                 </div>
               </div>
               <p className="text-foreground/90 text-center font-semibold text-xl">
-                You have a magic in you — a way of healing me without even trying. You are my safe place, my comfort, and my happiness.
+                You don't even have to try — you just have this magic in you that makes everything better. You are my comfort, my happiness, my peace.
               </p>
             </div>
           </LoveLetter>
 
-          {/* Postcard 8: Future Dreams */}
+          {/* Postcard 9: Future Dreams */}
           <LoveLetter 
             title="🌍 Our Future Together" 
             className="shadow-professional hover:shadow-serene transition-all duration-500 border-2 border-purple/30 bg-gradient-to-br from-purple/8 via-romantic/8 to-background"
           >
             <div className="space-y-5 text-lg leading-relaxed">
               <p className="text-foreground/90">
-                When I think about the future, all I see is you. I dream of marrying you, of building a life where it is always you and me. I want us to travel the whole world together — not just to see places, but to live moments.
+                When I think of the future, I see only you by my side. I dream of marrying you, of building a life with you, of traveling the world together and creating memories that last forever. You know I love to travel, but the truth is, the place doesn't matter. What matters is being with you in those places.
               </p>
               <div className="bg-gradient-to-br from-primary/10 via-purple/10 to-romantic/10 p-8 rounded-2xl border-2 border-primary/30 my-6">
                 <h3 className="font-dancing text-3xl text-primary mb-6 text-center">I imagine us... 🌟</h3>
                 <div className="space-y-3 text-foreground/90">
-                  <p>✈️ Laughing in strange cities</p>
-                  <p>🤝 Holding hands while exploring unknown streets</p>
-                  <p>🌅 Watching sunsets by the sea</p>
-                  <p>📸 Creating memories that we will hold onto forever</p>
+                  <p>😄 Laughing together in new cities</p>
+                  <p>🤝 Holding hands as we walk in new places</p>
+                  <p>🌅 Watching sunsets together</p>
+                  <p>💫 Sharing moments that will always stay with us</p>
                 </div>
               </div>
-              <p className="text-foreground/90 text-center italic text-xl">
-                For me, the true adventure is not the destinations, but being with you wherever we go.
-              </p>
             </div>
           </LoveLetter>
 
-          {/* Postcard 9: Supporting Your Dreams */}
-          <LoveLetter 
-            title="🩺 Supporting Your Dreams" 
-            className="shadow-elegant hover:shadow-professional transition-all duration-500 border-2 border-cyan/20 bg-gradient-to-br from-cyan/5 via-primary/5 to-background"
-          >
-            <div className="space-y-5 text-lg leading-relaxed">
-              <p className="text-foreground/90">
-                I also pray for your success. I know how hardworking and determined you are, and I believe with all my heart that you will become the amazing doctor you dream of being. I will always be by your side, supporting you, cheering for you, and reminding you of how much you're capable of.
-              </p>
-              <div className="text-center my-6 p-8 bg-gradient-to-r from-cyan/10 to-primary/10 rounded-xl border-2 border-cyan/30">
-                <p className="font-dancing text-3xl text-primary mb-3">Dr. Sehba ❤️</p>
-                <p className="text-foreground/80">Your biggest supporter, always</p>
-              </div>
-              <p className="text-foreground/90">
-                Even if distance comes between us, my love will never stop. No matter where you are, my heart will always be with you.
-              </p>
-            </div>
-          </LoveLetter>
 
           {/* Final Postcard: Forever Promise */}
           <LoveLetter 
             id="promises"
-            title="💍 Forever & Always" 
+            title="💍 My Promise to You" 
             className="shadow-professional border-4 border-primary/40 bg-gradient-to-br from-primary/10 via-romantic/10 to-purple/10"
           >
             <div className="text-center space-y-8">
               <div className="bg-gradient-to-r from-primary via-purple to-romantic p-8 rounded-2xl shadow-elegant">
-                <p className="font-dancing text-4xl text-white mb-4">My Promise to You</p>
+                <p className="font-dancing text-4xl text-white mb-4">Forever & Always</p>
               </div>
               
               <div className="space-y-6 text-lg leading-relaxed max-w-3xl mx-auto">
                 <p className="text-foreground/90">
-                  I promise you, Sehba, that I will always love you. I will always care for you. I will always do my best to make you feel as special as you truly are. I know I am not perfect, and sometimes I fall short, but I am trying every single day to be more patient, more caring, and more understanding.
+                  I promise you this, Sehba: I will always love you, always care for you, and always stand by you. I know I'm not perfect. I know I sometimes fail at understanding things the way I should. But I am learning every day. I am trying every day. And I will never stop trying to be better for you.
                 </p>
                 <p className="text-foreground/90">
-                  I promise I am working to understand you better, and I will never give up on us.
+                  I promise I will understand you, I will keep growing, and I will never give up on us.
                 </p>
               </div>
 
@@ -283,12 +275,12 @@ const Index = () => {
                   <p className="text-foreground/90">❤️ My Love</p>
                   <p className="text-foreground/90">🕊️ My Peace</p>
                   <p className="text-foreground/90">🏠 My Safe Place</p>
-                  <p className="text-foreground/90">♾️ My Forever</p>
+                  <p className="text-foreground/90">♾️ My Everything</p>
                 </div>
               </div>
 
               <p className="text-2xl text-foreground/90 font-semibold">
-                With you, life feels complete. With you, I feel like I have found home.
+                My future only makes sense with you in it. And I want you to know that I will love you not just today, not just tomorrow, but for all the days to come.
               </p>
 
               <div className="pt-8 space-y-6">

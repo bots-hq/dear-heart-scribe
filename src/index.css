@@ -125,11 +125,29 @@
 @layer base {
   * {
     @apply border-border;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 
   body {
     @apply bg-background text-foreground;
     font-family: 'Inter', sans-serif;
+  }
+  
+  /* Better font rendering for cursive fonts on mobile */
+  .font-dancing {
+    font-weight: 600;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+  
+  /* Ensure proper weight on smaller screens */
+  @media (max-width: 768px) {
+    .font-dancing {
+      font-weight: 700;
+      letter-spacing: 0.01em;
+    }
   }
 }
 

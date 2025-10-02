@@ -1,15 +1,31 @@
-import React from 'react';
+import React, { useState, useRef } from 'react';
 import { Button } from '@/components/ui/button';
 import FloatingHearts from '@/components/FloatingHearts';
 import LoveLetter from '@/components/LoveLetter';
 import MusicPlayer from '@/components/MusicPlayer';
+import EntranceScreen from '@/components/EntranceScreen';
 import heroImage from '@/assets/romantic-hero.jpg';
 
 const Index = () => {
+  const [hasEntered, setHasEntered] = useState(false);
+  const musicPlayerRef = useRef<{ play: () => void }>(null);
+
+  const handleEnter = () => {
+    setHasEntered(true);
+    // Small delay to ensure MusicPlayer is mounted
+    setTimeout(() => {
+      musicPlayerRef.current?.play();
+    }, 100);
+  };
+
+  if (!hasEntered) {
+    return <EntranceScreen onEnter={handleEnter} />;
+  }
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-background via-accent/5 to-primary/8 relative overflow-hidden">
       <FloatingHearts />
-      <MusicPlayer />
+      <MusicPlayer ref={musicPlayerRef} />
       
       {/* Subtle Professional Background Elements */}
       <div className="fixed inset-0 overflow-hidden pointer-events-none">

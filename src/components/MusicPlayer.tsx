@@ -1,12 +1,25 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef, useEffect, useImperativeHandle, forwardRef } from 'react';
 import { Play, Pause, Music } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
-const MusicPlayer = () => {
-  const [isPlaying, setIsPlaying] = useState(true);
+const MusicPlayer = forwardRef<{ play: () => void }>((props, ref) => {
+  const [isPlaying, setIsPlaying] = useState(false);
   const audioRef = useRef<HTMLAudioElement>(null);
 
   const musicUrl = "https://www.dropbox.com/scl/fi/hafmt2cc44rf9iz7s884k/Ed-Sheeran-Perfect.mp3?rlkey=za1ykruc6hmsj6v3f8ed1x4ny&st=uhs3t5o9&dl=1";
+
+  // Expose play method to parent
+  useImperativeHandle(ref, () => ({
+    play: () => {
+      if (audioRef.current) {
+        audioRef.current.play().then(() => {
+          setIsPlaying(true);
+        }).catch((error) => {
+          console.log("Play was prevented:", error);
+        });
+      }
+    }
+  }));
 
   const togglePlay = () => {
     if (audioRef.current) {
@@ -23,12 +36,6 @@ const MusicPlayer = () => {
     const audio = audioRef.current;
     if (audio) {
       audio.volume = 0.3; // Set volume to 30%
-      
-      // Auto-play when component mounts
-      audio.play().catch((error) => {
-        console.log("Auto-play was prevented:", error);
-        setIsPlaying(false);
-      });
       
       const handleEnded = () => {
         setIsPlaying(false);
@@ -87,6 +94,8 @@ const MusicPlayer = () => {
       />
     </div>
   );
-};
+});
+
+MusicPlayer.displayName = 'MusicPlayer';
 
 export default MusicPlayer;

@@ -144,7 +144,7 @@ const RomanticThingsILike = () => {
 
       {/* Final message */}
       {showFinal && (
-        <div className="fixed inset-0 z-20 flex items-center justify-center pointer-events-none">
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20 pointer-events-none">
           <div className="animate-glow-pulse">
             <div className="relative">
               <div className="absolute -inset-8 bg-gradient-to-r from-primary via-romantic to-purple rounded-full blur-3xl opacity-50 animate-pulse"></div>

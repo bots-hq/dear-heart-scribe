@@ -50,7 +50,7 @@ const Index = () => {
               className="font-playfair text-lg px-10 py-4 shadow-elegant transition-all hover:shadow-serene hover:-translate-y-1"
               onClick={() => window.open('https://salikriyaz.com/letter.pdf', '_blank')}
             >
-              Download Letter PDF
+              Download Short Letter 📄
             </Button>
           </div>
         </div>
@@ -328,7 +328,7 @@ const Index = () => {
                     className="font-playfair text-lg px-10 py-4 shadow-elegant transition-all hover:shadow-serene hover:-translate-y-1"
                     onClick={() => window.open('https://salikriyaz.com/letter.pdf', '_blank')}
                   >
-                    Download Full Letter 📄
+                    Download Short Letter 📄
                   </Button>
                 </div>
               </div>

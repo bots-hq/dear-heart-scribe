@@ -291,6 +291,13 @@ const Index = () => {
                 <p className="text-foreground/90">
                   I promise I will understand you, I will keep growing, and I will never give up on us.
                 </p>
+                
+                <div className="bg-gradient-to-br from-cyan/10 via-accent/10 to-primary/10 p-8 rounded-2xl border-2 border-cyan/30 my-8">
+                  <h3 className="font-dancing text-3xl text-primary mb-6 text-center">Dr. Sehba 👩‍⚕️</h3>
+                  <p className="text-foreground/90 text-center">
+                    I also pray for your success. I know how hardworking and determined you are, and I believe with all my heart that you will become the amazing doctor you dream of being. I will always be by your side, supporting you, cheering for you, and reminding you of how much you're capable of.
+                  </p>
+                </div>
               </div>
 
               <div className="bg-gradient-to-br from-romantic/10 via-primary/10 to-purple/10 p-10 rounded-2xl border-2 border-primary/30 my-8">

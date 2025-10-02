@@ -227,6 +227,30 @@ const Index = () => {
             </div>
           </LoveLetter>
 
+          {/* Special Poem: For My Zuvv */}
+          <LoveLetter 
+            title="🌸 For My Zuvv 🌸" 
+            className="shadow-professional hover:shadow-serene transition-all duration-500 border-2 border-romantic/30 bg-gradient-to-br from-romantic/10 via-primary/10 to-purple/10"
+          >
+            <div className="text-center space-y-6">
+              <div className="bg-gradient-to-r from-primary/10 via-romantic/10 to-purple/10 p-10 rounded-2xl border-2 border-romantic/30">
+                <div className="font-playfair text-xl md:text-2xl leading-relaxed text-foreground/90 space-y-4">
+                  <p>Zuvv, my heart beats loud and true,</p>
+                  <p>Every dream I see comes back to you.</p>
+                  <p>Your smile's my sunrise, your voice my song,</p>
+                  <p>With you by my side, I feel I belong.</p>
+                  <div className="my-6 flex justify-center">
+                    <div className="w-24 h-1 bg-gradient-to-r from-romantic via-primary to-purple rounded-full"></div>
+                  </div>
+                  <p>Through distance and time, my love won't fade,</p>
+                  <p>In my heart, forever, your home is made.</p>
+                  <p>One life, one love, one endless view,</p>
+                  <p>My Sehba, my Zuvv, it's always you. ❤️</p>
+                </div>
+              </div>
+            </div>
+          </LoveLetter>
+
           {/* Postcard 9: Future Dreams */}
           <LoveLetter 
             title="🌍 Our Future Together" 

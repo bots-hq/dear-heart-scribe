@@ -2,12 +2,14 @@ import React from 'react';
 import { Button } from '@/components/ui/button';
 import FloatingHearts from '@/components/FloatingHearts';
 import LoveLetter from '@/components/LoveLetter';
+import MusicPlayer from '@/components/MusicPlayer';
 import heroImage from '@/assets/romantic-hero.jpg';
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-background via-accent/5 to-primary/8 relative overflow-hidden">
       <FloatingHearts />
+      <MusicPlayer />
       
       {/* Subtle Professional Background Elements */}
       <div className="fixed inset-0 overflow-hidden pointer-events-none">

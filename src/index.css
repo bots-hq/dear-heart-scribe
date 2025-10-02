@@ -9,42 +9,42 @@
 
 @layer base {
   :root {
-    /* Professional Serene Color Palette */
-    --background: 220 30% 98%;
-    --foreground: 215 25% 27%;
+    /* Royal Blue Romantic Color Palette */
+    --background: 220 40% 98%;
+    --foreground: 225 30% 20%;
 
-    --card: 210 40% 97%;
-    --card-foreground: 215 20% 32%;
+    --card: 220 45% 97%;
+    --card-foreground: 225 25% 25%;
 
-    --popover: 210 40% 97%;
-    --popover-foreground: 215 20% 32%;
+    --popover: 220 45% 97%;
+    --popover-foreground: 225 25% 25%;
 
-    --primary: 240 60% 65%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 221 83% 53%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 200 25% 90%;
-    --secondary-foreground: 215 25% 35%;
+    --secondary: 210 60% 92%;
+    --secondary-foreground: 225 30% 25%;
 
-    --muted: 220 20% 94%;
-    --muted-foreground: 215 15% 58%;
+    --muted: 220 30% 94%;
+    --muted-foreground: 220 15% 55%;
 
-    --accent: 190 55% 72%;
-    --accent-foreground: 215 25% 27%;
+    --accent: 200 80% 60%;
+    --accent-foreground: 0 0% 100%;
 
-    --romantic: 340 65% 68%;
-    --romantic-foreground: 210 40% 98%;
+    --romantic: 330 70% 65%;
+    --romantic-foreground: 0 0% 100%;
 
-    --gold: 45 85% 72%;
-    --gold-foreground: 215 25% 27%;
+    --gold: 43 90% 65%;
+    --gold-foreground: 225 30% 20%;
 
-    --purple: 260 50% 70%;
-    --purple-foreground: 210 40% 98%;
+    --purple: 270 60% 65%;
+    --purple-foreground: 0 0% 100%;
 
-    --cyan: 185 45% 65%;
-    --cyan-foreground: 215 25% 27%;
+    --cyan: 190 70% 55%;
+    --cyan-foreground: 0 0% 100%;
 
-    --sunset: 20 70% 75%;
-    --sunset-foreground: 215 25% 27%;
+    --sunset: 15 80% 65%;
+    --sunset-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
@@ -55,19 +55,19 @@
 
     --radius: 0.5rem;
     
-    /* Professional Serene Gradients */
-    --gradient-rainbow: linear-gradient(135deg, hsl(var(--romantic)), hsl(var(--purple)), hsl(var(--cyan)));
-    --gradient-sunset: linear-gradient(135deg, hsl(var(--sunset)), hsl(var(--gold)), hsl(var(--accent)));
+    /* Royal Blue Romantic Gradients */
+    --gradient-rainbow: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--purple)), hsl(var(--romantic)));
+    --gradient-sunset: linear-gradient(135deg, hsl(var(--sunset)), hsl(var(--gold)), hsl(var(--romantic)));
     --gradient-ocean: linear-gradient(135deg, hsl(var(--cyan)), hsl(var(--accent)), hsl(var(--primary)));
-    --gradient-dream: linear-gradient(135deg, hsl(var(--romantic)), hsl(var(--primary)), hsl(var(--gold)));
+    --gradient-dream: linear-gradient(135deg, hsl(var(--romantic)), hsl(var(--primary)), hsl(var(--purple)));
     --gradient-soft: linear-gradient(180deg, hsl(var(--background)), hsl(var(--card)));
-    --gradient-professional: linear-gradient(135deg, hsl(var(--primary) / 0.8), hsl(var(--accent) / 0.6), hsl(var(--romantic) / 0.7));
+    --gradient-royal: linear-gradient(135deg, hsl(var(--primary)), hsl(221 83% 43%), hsl(221 83% 63%));
     
-    /* Professional Shadows */
-    --shadow-elegant: 0 8px 32px -8px hsl(var(--primary) / 0.15), 0 4px 16px -4px hsl(var(--romantic) / 0.1);
-    --shadow-serene: 0 12px 40px -12px hsl(var(--accent) / 0.2), 0 6px 20px -6px hsl(var(--cyan) / 0.15);
-    --shadow-professional: 0 16px 48px -16px hsl(var(--foreground) / 0.1), 0 8px 24px -8px hsl(var(--primary) / 0.08);
-    --shadow-subtle: 0 4px 24px -4px hsl(var(--foreground) / 0.08);
+    /* Royal Blue Shadows */
+    --shadow-elegant: 0 10px 40px -10px hsl(var(--primary) / 0.25), 0 6px 20px -6px hsl(var(--primary) / 0.15);
+    --shadow-serene: 0 12px 45px -12px hsl(var(--accent) / 0.3), 0 8px 25px -8px hsl(var(--cyan) / 0.2);
+    --shadow-professional: 0 20px 60px -20px hsl(var(--primary) / 0.2), 0 10px 30px -10px hsl(var(--primary) / 0.12);
+    --shadow-subtle: 0 6px 30px -6px hsl(var(--primary) / 0.12);
     
     /* Smooth Transitions */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);

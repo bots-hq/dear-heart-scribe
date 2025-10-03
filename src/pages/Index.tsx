@@ -154,20 +154,20 @@ const Index = () => {
             </div>
           </LoveLetter>
 
-          {/* Postcard 5: June 10 - Confession */}
+          {/* Postcard 5: July 10 - Confession */}
           <LoveLetter 
-            title="💝 June 10 - The Night We Confessed" 
+            title="💝 July 10 - The Night We Confessed"
             className="shadow-professional hover:shadow-serene transition-all duration-500 border-2 border-romantic/30 bg-gradient-to-br from-romantic/8 via-primary/8 to-background"
           >
             <div className="space-y-5 text-lg leading-relaxed">
               <div className="text-center mb-6">
                 <div className="inline-block bg-gradient-to-r from-romantic via-purple to-primary p-6 rounded-2xl shadow-elegant">
-                  <p className="font-dancing text-4xl text-white">June 10</p>
+                  <p className="font-dancing text-4xl text-white">July 10</p>
                   <p className="text-white/90 text-sm mt-2">The night that changed everything</p>
                 </div>
               </div>
               <p className="text-foreground/90">
-                Then came the night of June 10. The night that changed everything. That was the night we confessed what we felt for each other. You said we should just go with the flow until we were ready for those three magical words.
+                Then came the night of July 10. The night that changed everything. That was the night we confessed what we felt for each other. You said we should just go with the flow until we were ready for those three magical words.
               </p>
               <p className="text-foreground/90">
                 And when we finally said "I love you," it was like the world stopped for a second. I knew from that moment that my life had found something it could never lose.
